@@ -3,7 +3,7 @@ module.exports = (grunt) ->
     coffee:
       compile:
         files:
-          "public/js/*.js": "app/coffee/**/*.coffee"
+          "public/*.js": "app/**/*.coffee"
 
         options:
           flatten: false
@@ -12,12 +12,12 @@ module.exports = (grunt) ->
     jade:
       compile:
         files:
-          "public/index.html": "app/jade/index.jade"
+          "public/index.html": "app/**/*.jade"
 
     stylus:
       compile:
         files:
-          "public/css/styles.css": "app/stylus/*.styl"
+          "public/css/*.css": "app/**/*.styl"
 
         options:
           compress: true
@@ -28,15 +28,15 @@ module.exports = (grunt) ->
 
     watch:
       coffee:
-        files: ["app/coffee/**/*.coffee"]
+        files: ["app/**/*.coffee"]
         tasks: "coffee reload"
 
       stylus:
-        files: ["app/stylus/*.styl"]
+        files: ["app/**/*.styl"]
         tasks: "stylus reload"
 
       jade:
-        files: ["app/jade/*.jade"]
+        files: ["app/**/*.jade"]
         tasks: "jade reload"
 
     reload:
