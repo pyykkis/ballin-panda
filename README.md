@@ -1,8 +1,8 @@
 # Template for client-side web apps
 
-## Setup
+## Out-of-the box setup
 
-* Grunt for
+* Grunt tasks for
   * Jade
   * Stylus
   * CoffeeScript
