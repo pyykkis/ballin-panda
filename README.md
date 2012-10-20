@@ -1,6 +1,6 @@
 # Template for client-side web apps
 
-## Out-of-the box setup
+## Out of the box setup
 
 * Grunt tasks for
   * Jade
