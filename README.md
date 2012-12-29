@@ -14,7 +14,7 @@
 ## Setting up the development environment
 
 ```
-npm install -g grunt bower coffee-script
+npm install grunt bower coffee-script -g
 npm install
 grunt --config grunt.coffee
 open http://localhost:6001
